@@ -1,0 +1,22 @@
+{
+  "name": "next-fetch-monorepo",
+  "description": "",
+  "version": "1.0.0",
+  "author": "",
+  "keywords": [],
+  "devDependencies": {
+    "@changesets/cli": "^2.26.0",
+    "@svitejs/changesets-changelog-github-compact": "^0.1.1",
+    "turbo": "^1.7.4"
+  },
+  "scripts": {
+    "build": "pnpm turbo run build",
+    "dev": "pnpm turbo run dev",
+    "test": "pnpm turbo run test",
+    "version:prepare": "changeset version && pnpm install --no-frozen-lockfile",
+    "version:publish": "changeset publish"
+  },
+  "private": true,
+  "license": "ISC",
+  "packageManager": "pnpm@7.3.0"
+}
